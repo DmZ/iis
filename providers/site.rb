@@ -165,5 +165,6 @@ def appcmd
 end
 
 def site_identifier
-  @new_resource.host_header || @new_resource.site_name
+  return @new_resource.host_header if !String(@new_resource.host_header).empty? 
+  @new_resource.site_name
 end
