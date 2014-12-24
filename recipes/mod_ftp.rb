@@ -29,5 +29,6 @@ end
 features.each do |f|
   windows_feature f do
     action :install
+    all true
   end
 end

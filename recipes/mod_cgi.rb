@@ -29,4 +29,5 @@ end
 
 windows_feature feature do
   action :install
+  all true
 end
